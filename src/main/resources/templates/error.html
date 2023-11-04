@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Error de Búsqueda</title>
+  <!-- Agrega los enlaces a Bootstrap y CSS de Bootstrap aquí -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+  <h1 class="text-danger">Error de Búsqueda</h1>
+  <div class="alert alert-danger">
+    <p th:text="${error}"></p>
+  </div>
+  <a th:href="@{/}" class="btn btn-primary">Volver a la Búsqueda</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar Libros</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+  <h1 class="mb-4">Buscar Libros</h1>
+  <form th:action="@{/buscar}" method="post">
+    <div class="form-group">
+      <label for="nombre">Término de Búsqueda:</label>
+      <input type="text" id="nombre" name="title" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </form>
+</div>
+</body>
+</html>
